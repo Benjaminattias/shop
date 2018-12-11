@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+	{% for maillot in maillots %}
+	<h3>
+		<a href="{% url 'shop_app:maillot' maillot.id %}">{{ maillot.name }} - {{  maillot.price }} - {{  maillot.description }}</a>
+	</h3>
+	{% endfor %}
+  
+</body>
+</html>
+
+
+
