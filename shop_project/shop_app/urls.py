@@ -10,4 +10,7 @@ urlpatterns = [
   path('clients/<int:client_id>/', views.client, name='client'),
   path('maillots', views.maillots, name='maillots'),
   path('maillots/<int:maillot_id>/', views.maillot, name='maillot'),
+  path('comments', views.comments, name='comments'),
+  path('comments/<int:comment_id>/', views.comment, name='comment'),
+  path('products/<int:product_id>/comment_form', views.comment_form, name='comment_form'),
 ]
